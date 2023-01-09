@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Alias Generator - Options</title>
+    <link rel="stylesheet" href="popup.css"/>
+  </head>
+
+  <body>
+    <div class="section">
+      <div>
+        <h3>Preferences</h3>
+        <div>
+          <label for="enabled">Enabled:</label>
+          <input type="checkbox" id="enabled">
+        </div>
+        <div>
+          <label for="username">Email:</label>
+          <input type="text" id="username" name="username" required="required" minlength="1">
+          @
+          <input type="text" id="domain" name="domain" required="required" minlength="1">
+        </div>
+        <div>
+          <label for="aliasPrefix">Alias Prefix:</label>
+          <input type="text" id="aliasPrefix" name="aliasPrefix" required="required" minlength="1">
+        </div>
+        <div>
+          <label for="useSLD">Use SLD (www.<b>example</b>.com):</label>
+          <input type="checkbox" id="useSLD">
+        </div>
+      </div>
+      <div>
+        <label for="b64conversionEnabled">Enable Base64 Conversion:</label>
+        <input type="checkbox" id="b64conversionEnabled">
+      </div>
+      <div>
+        <div id="status"></div>
+        <button id="save">Save</button>
+      </div>
+    </div>
+    <div id="section">
+      <h3>Base64 Decode</h3>
+      <input type="text" id="b64text" name="b64text" minlength="1">
+      <button id="decode">Decode</button>
+      <div id="decodedText"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+
+</html>

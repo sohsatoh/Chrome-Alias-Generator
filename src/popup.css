@@ -1,0 +1,45 @@
+body {
+  min-width: 500px;
+  font-size: 16px;
+}
+
+div {
+  margin-top: 10px;
+}
+
+div.section {
+  margin: 5px;
+}
+
+input[type=text] {
+  height: 1em;
+  width: 10em;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+input[type=checkbox] {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+button {
+  height: 2em;
+  width: 6em;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: #EEE;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #DDD;
+}
+
+#status {
+  color: #3c763d;
+}
